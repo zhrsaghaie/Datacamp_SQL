@@ -110,7 +110,7 @@ FROM match_list
 WHERE total_goals >= 10;
 
 -- CTEs with nested subqueries
-WITH match_lis t AS ( SELECT 
+WITH match_list AS ( SELECT 
             		  country_id, 
             	      (home_goal + away_goal) AS goals
                       FROM match
